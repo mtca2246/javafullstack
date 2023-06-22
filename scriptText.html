@@ -1,0 +1,31 @@
+<html>
+<head>
+<script>
+function add()
+{
+var num1,num2,sum,pro,sub,div;
+num1=parseInt(document.getElementById("firstnumber").value);
+num2=parseInt(document.getElementById("secondnumber").value);
+sum=num1+num2;
+sub=num1-num2;
+pro=num1*num2;
+div=num1/num2;
+document.getElementById("txtAnswer").value=sum;
+document.getElementById("txtAnswer1").value=sub;
+document.getElementById("txtAnswer2").value=pro;
+document.getElementById("txtAnswer3").value=div;
+
+}
+</script>
+</head>
+<body>
+<p> First Number:<input id="firstnumber"></p>
+<p>Second Number:<input id="secondnumber"></p>
+<button onclick="add()">Answer</button>
+ 
+<p>sum=<input id="txtAnswer"></p>
+<p>sub=<input id="txtAnswer1"></p>
+<p>pro=<input id="txtAnswer2"></p>
+<p>div=<input id="txtAnswer3"></p>
+</body>
+</html>

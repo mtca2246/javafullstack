@@ -1,0 +1,22 @@
+<html>
+<body>
+<script type="text/javascript">
+/* You will receive a different greeting based on what day it is.
+Note that Sunday=0,monday=1, tuesday=2,etc.
+*/
+var d=new Date();
+theDay=d.getDay();
+switch(theDay)
+{
+case 0:document.write("Sleepy Sunday"); break;
+case 1:document.write("Working Monday"); break;
+case 2:document.write("Working Tuesday"); break;
+case 3:document.write("Rainy Wednesday"); break;
+case 4:document.write("Sunny Thursday"); break;
+case 5:document.write("Finally Friday"); break;
+case 6:document.write("Super Satday"); break;
+default: document.write("I'm looking forward to this weekend!");
+}
+</script>
+</body>
+</html>
