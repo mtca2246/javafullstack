@@ -1,0 +1,87 @@
+<html>
+<head><title>Survey Form</title></head>
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color:yellow;  
+} 
+<body bgcolor=lightblue>
+<style>
+.form-control input,
+.form-control select,
+.form-control textarea{
+border:1px solid #777;
+border-radius:2px;
+font-family:inherit;
+padding:10px;
+display:block;
+width:95%;
+}
+.form-control input[type="radio"],
+.form control-input[type="checkbox"]{
+display:inline-block;
+width:auto;
+}
+button{
+background-color:#05c46b;
+border:1px solid #777;
+border-radius:2px;
+font-family:inherit;
+font-size:21px;
+display:block;
+width:100%;
+margin-top:50px;
+margin-bottom:20px;
+}
+</style>
+</body>
+<body>
+<h1 align="center">Student Registration  Form</h1><br>
+<form id="form">
+<div class="form-control">
+<label for="name">FirstName:</label>
+<input type="text" id="Firstname" placeholder="Enter your name"><br><br>
+<label for="email">Middlename:</label>
+<input type="text" id="Middlename" placeholder="Entermiddlename"><br><br>
+<label for="Age">Lastname:</label>
+<input type="text" id="lastName" placeholder="Enter lastname"><br><br>
+<label>
+Course:</label>
+<select>
+<option value="Course">Course</option>
+<option value="BCA">BCA</option>
+<option value="BBA">BBA</option>
+<option value="B.Tech">B.Tech</option>
+<option value="MBA">MBA</option>
+<option value="MCA">MCA</option>
+<option value="M.Tech">M.Tech</option>
+</select><br><br>
+<label>
+Gender:
+</label><br>
+<input type="radio" name="male" />Male</input>
+<input type="radio" name="female" />Female</input>
+<input type="radio" name="other" />other</input>
+<br><br>
+<label>Phone:</label>
+<input type="text" name="country code" value="+91" size="2"/>
+<input type="text" name"phone" size="10"/>
+Address
+<br>
+<div><label for="">Current Address</label>
+<textarea name="Address" id="Addrress" placeholder="address">
+</textarea></div><br>
+Email:
+<input type="email" id="email" name="email"/><br>
+<br><br>
+Password:
+<input type="password" id="password" name="pass"><br>
+<br><br>
+Re-Enter password:
+<input type="password" id="repass" name="repass"><br>
+<br>
+<button type="Register" value="Register">Register</button>
+
+</form>
+</body>
+</html>
+
