@@ -1,22 +1,55 @@
 <html>
 <head>
-<script>
-function validateform() {
-var name=document.myForm.txtName.value;
-var Password=document.myForm.txtPassword.value;
-if(name==null || name==""){
-alert("Name can't be blank");
-return false;
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+.container {
+position:relative;
+width:50%;
 }
-else if(password.length<6){
-alert("Password must be at least 6 characters long.");
-return false;
+.image {
+display:block;
+width:100%;
+height:auto;
 }
-}
-</script></head><body>
-<form name="myForm" method="post" >
 
-Name:<input type="text" name="txtName"><br/><br>
-Password:<input type="password" name="txtPassword"><br/>
-<input type="submit" value="register" onclick=validateform()>
-</form></body></html>
+.overlay {
+position:absolute;
+top:0;
+bottom:0;
+left:0;
+right:0;
+height:100%;
+width:100%;
+opacity:0;
+transition: .5s ease;
+background-color:#008CBA;
+}
+
+.container:hover  .overlay {
+opacity: 1;
+}
+
+text {
+color:white;
+font-size: 20px;
+position:absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+text-align:center;
+}
+</style></head><body>
+
+<h2> fade in overlay</h2>
+<p> Hover over the image to see the effect.</p>
+
+<div class="container">
+<img src="demo1.jpg" alt="Avatar" class="image">
+<div class="over lay">
+<div class ="text">Hello World!</div>
+</div>
+</div>
+</body>
+</hmtl>
