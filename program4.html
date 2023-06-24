@@ -1,26 +1,24 @@
 <html>
-<head>
-<style>
-ul {
-list-style-type:none;
-margin:0;
-padding:0;
-overflow:hidden;
-background-color:#dddddd;
+<body>
+<h2>JavaScript Validation</h2>
+<p>Please input a number between 1 and 10:</p>
+<input id="numb">
+<button type="button"
+onclick="myFunction()">
+Submit</button>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+let x = document.getElementById("numb").value;
+if (isNaN(x) || x < 1 || x > 10) {
+text = "Input not valid";
+} else {
+text = "Input OK";
 }
-li {
-float:left;
+document.getElementById("demo").innerHTML = text;
 }
-li a {
-display:block;
-padding:8px;
-}
-</style> </head><body>
-<ul >
-<li><a href="#Home">Home</a></li>
-<li><a href="#News">News</a></li>
-<li><a href="#Contact">Contact</a></li>
-<li><a href="#About">About</a></li>
-</ul>
+</script>
 </body>
 </html>
+
