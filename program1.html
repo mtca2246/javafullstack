@@ -1,55 +1,22 @@
 <html>
 <head>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<style>
-.container {
-position:relative;
-width:50%;
-}
-.image {
-display:block;
-width:100%;
-height:auto;
-}
+<title>student form</title></head><style>
+body {
+margin-left:5%;;
+margin-right:20%;
+max-width:400px;
+max-height:400px;
+padding:30px 20px;
+border:2px solid rgb(200,200,200);
+background-image:
+}</style>
+<body>
+<h1> Student Record</h1><label>Full Name:</label><br>
+<input type="text" placeholder=Enter the name  size="50"></input><br><br>
+<label>Roll No:</label><br>
+<input type="name" placeholder=Enter the Roll number size="50"></input><br><br>
+<label> Student class:</label><br>
+<input type="course" placeholder=Enter the student class size="50"></input><br><br>
+<center><input type="submit" value="submit"></center>
+</body></html>
 
-.overlay {
-position:absolute;
-top:0;
-bottom:0;
-left:0;
-right:0;
-height:100%;
-width:100%;
-opacity:0;
-transition: .5s ease;
-background-color:#008CBA;
-}
-
-.container:hover  .overlay {
-opacity: 1;
-}
-
-text {
-color:white;
-font-size: 20px;
-position:absolute;
-top: 50%;
-left: 50%;
--webkit-transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
-transform: translate(-50%, -50%);
-text-align:center;
-}
-</style></head><body>
-
-<h2> fade in overlay</h2>
-<p> Hover over the image to see the effect.</p>
-
-<div class="container">
-<img src="demo1.jpg" alt="Avatar" class="image">
-<div class="over lay">
-<div class ="text">Hello World!</div>
-</div>
-</div>
-</body>
-</hmtl>
